@@ -19,6 +19,8 @@ app.use(express.urlencoded({ extended: true }));
 //routes to /signup
 app.use('/signup', usersRouter);
 
+app.use('/login', usersRouter);
+
 //routes to /groups
 app.use('/groups', groupRouter);
 
